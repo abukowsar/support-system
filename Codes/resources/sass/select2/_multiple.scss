@@ -1,0 +1,36 @@
+.select2-selection--multiple {
+    background-color: white;
+    border: 1px solid #aaa;
+
+    .select2-selection__placeholder {
+        color: #999;
+    }
+
+    .select2-selection__choice {
+        background-color: #e4e4e4;
+        border: 1px solid #aaa;
+    }
+
+    .select2-selection__choice__remove {
+        color: #999;
+        &:hover {
+            color: #333;
+        }
+    }
+}
+
+.select2-container--focus {
+    .select2-selection--multiple {
+        border: solid black 1px;
+    }
+}
+
+.select2-container--disabled {
+    .select2-selection--multiple {
+        background-color: #eee;
+    }
+
+    .select2-selection__choice__remove {
+        display: none;
+    }
+}

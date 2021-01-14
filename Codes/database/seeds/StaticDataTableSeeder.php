@@ -1,0 +1,425 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class StaticDataTableSeeder extends Seeder
+{
+
+    /**
+     * Auto generated seed file
+     *
+     * @return void
+     */
+    public function run()
+    {
+        
+
+        \DB::table('static_data')->delete();
+        
+        \DB::table('static_data')->insert(array (
+            0 => 
+            array (
+                'id' => 1,
+                'type' => 'priority',
+                'value' => 'emergency',
+                'label' => 'Emergency',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            1 => 
+            array (
+                'id' => 2,
+                'type' => 'priority',
+                'value' => 'high',
+                'label' => 'High',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            2 => 
+            array (
+                'id' => 3,
+                'type' => 'priority',
+                'value' => 'normal',
+                'label' => 'Normal',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            3 => 
+            array (
+                'id' => 4,
+                'type' => 'priority',
+                'value' => 'low',
+                'label' => 'Low',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'type' => 'ticket_tags',
+                'value' => 'support',
+                'label' => 'Support',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            5 => 
+            array (
+                'id' => 6,
+                'type' => 'ticket_tags',
+                'value' => 'bugs',
+                'label' => 'Bugs',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            6 => 
+            array (
+                'id' => 7,
+                'type' => 'ticket_tags',
+                'value' => 'sell',
+                'label' => 'Sell',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            7 => 
+            array (
+                'id' => 8,
+                'type' => 'ticket_tags',
+                'value' => 'billing',
+                'label' => 'Billing',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            8 => 
+            array (
+                'id' => 9,
+                'type' => 'article_type',
+                'value' => 'service',
+                'label' => 'Service',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            9 => 
+            array (
+                'id' => 10,
+                'type' => 'article_type',
+                'value' => 'product',
+                'label' => 'Product',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            10 => 
+            array (
+                'id' => 11,
+                'type' => 'mailable',
+                'value' => 'open_ticket',
+                'label' => 'Open Ticket',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            11 => 
+            array (
+                'id' => 12,
+                'type' => 'mail_button',
+                'value' => 'id',
+                'label' => 'ID',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            12 => 
+            array (
+                'id' => 14,
+                'type' => 'mail_button',
+                'value' => 'subject',
+                'label' => 'Issue',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            13 => 
+            array (
+                'id' => 15,
+                'type' => 'mail_button',
+                'value' => 'priority',
+                'label' => 'Priority',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            14 => 
+            array (
+                'id' => 16,
+                'type' => 'mail_button',
+                'value' => 'description',
+                'label' => 'Description',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            15 => 
+            array (
+                'id' => 17,
+                'type' => 'mailable',
+                'value' => 'assign_ticket',
+                'label' => 'Assigned Ticket',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            16 => 
+            array (
+                'id' => 18,
+                'type' => 'mail_button',
+                'value' => 'user',
+                'label' => 'Ticket User',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            17 => 
+            array (
+                'id' => 19,
+                'type' => 'mail_button',
+                'value' => 'type',
+                'label' => 'Type',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            18 => 
+            array (
+                'id' => 20,
+                'type' => 'mail_button',
+                'value' => 'department',
+                'label' => 'Department',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            19 => 
+            array (
+                'id' => 21,
+                'type' => 'mail_button',
+                'value' => 'link',
+                'label' => 'Link',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            20 => 
+            array (
+                'id' => 22,
+                'type' => 'mailable',
+                'value' => 'solve_ticket',
+                'label' => 'Solved Ticket',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            21 => 
+            array (
+                'id' => 27,
+                'type' => 'mailable',
+                'value' => 'reopen_ticket',
+                'label' => 'Reopen Ticket',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            22 => 
+            array (
+                'id' => 32,
+                'type' => 'mailable',
+                'value' => 'new_ticket_request',
+                'label' => 'New Ticket Request',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            23 => 
+            array (
+                'id' => 42,
+                'type' => 'mailable',
+                'value' => 'reply_ticket',
+                'label' => 'Reply Ticket',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            24 => 
+            array (
+                'id' => 43,
+                'type' => 'mailable',
+                'value' => 'closed_ticket',
+                'label' => 'Closed Ticket',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            25 => 
+            array (
+                'id' => 44,
+                'type' => 'mailable',
+                'value' => 'contact_us',
+                'label' => 'Contact Us',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            26 => 
+            array (
+                'id' => 45,
+                'type' => 'mailable_to',
+                'value' => 'admin',
+                'label' => 'admin',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            27 => 
+            array (
+                'id' => 46,
+                'type' => 'mailable_to',
+                'value' => 'department-leaders',
+                'label' => 'department-leaders',
+                'sequence' => 2,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            28 => 
+            array (
+                'id' => 47,
+                'type' => 'mailable_to',
+                'value' => 'ticket-user',
+                'label' => 'ticket-user',
+                'sequence' => 3,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            29 => 
+            array (
+                'id' => 48,
+                'type' => 'mailable_to',
+                'value' => 'assigned-employee',
+                'label' => 'assigned-employee',
+                'sequence' => 4,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+            30 => 
+            array (
+                'id' => 49,
+                'type' => 'mailable',
+                'value' => 'reply_by_user',
+                'label' => 'Reply By User',
+                'sequence' => 1,
+                'sub_type' => NULL,
+                'status' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
+        ));
+    }
+}

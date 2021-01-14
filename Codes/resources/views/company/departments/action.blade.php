@@ -1,0 +1,12 @@
+
+{{ Form::open(['route' => ['departments.destroy', $id], 'method' => 'delete','data--submit'=>'department'.$id]) }}
+<div class='btn-group'>
+  
+    <a href="{{ route('departments.edit',$id) }}" class='table-action'>
+        <span class="badge badge-success mr-2">{{ _t(__('message.edit',['name' =>'' ])) }}</span>
+    </a>
+
+    <a class='table-action' href="javascript:void(0)" data--submit="department{{$id}}"  data--confirmation='true' data-title='Delete' data-message='{{_t(__("message.delete_msg"))}}'><span class="badge badge-danger">{{ _t(__('message.delete')) }}</span>
+    </a>
+</div>
+{{ Form::close() }}

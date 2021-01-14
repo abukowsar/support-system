@@ -1,0 +1,551 @@
+<!DOCTYPE html>iqu
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- SITE META -->
+      <title></title>
+      <!-- BOOTSTRAP STYLES -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min-4.css">
+      <!-- TEMPLATE STYLES -->
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+      <!-- TEMPLATE STYLES -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body class="leftside">
+      <div id="loading">
+         <div id="loading-center">
+            <img src="images/loder.gif" alt="">
+         </div>
+      </div>
+      <!-- START SITE -->
+      <div id="wrapper">
+      <div class="row-offcanvas row-offcanvas-left">
+         <div id="sidebar-fix" class="sidebar-offcanvas">
+            <header id="vertical" class="header header-style-1">
+               <nav class="navbar navbar-default yamm p-0">
+                  <div class="container-f">
+                     <div class="navbar-header">
+                        <div class="site-logo text-center">
+                           <a class="navbar-brand" href="#">
+                           <img class="img-responsive p-4" src="images/logo-black.png" alt="">
+                           </a>
+                        </div>
+                     </div>
+                     <div id='cssmenu'>
+                        <ul>
+                           <li class='has-sub active'>
+                              <a href='#'><span>Introduction</span></a>
+                              <ul>
+                                 <li><a href='#basic-installation'><span>Basic Installation</span></a></li>
+                                 <li><a href='#installation-instructions'><span>Installation Instructions</span></a></li>
+                              </ul>
+                           </li>
+                           <li class='has-sub'>
+                              <a href='#'><span>Configuration</span></a>
+                              <ul>
+                                 <li><a href="#mail-config">Mail Configuration</a></li>
+                                 <li><a href="#app-config">App Configuration</a></li>
+                              </ul>
+                           </li>
+                           <li class='has-sub'>
+                           	<a href="#directory-structure"><span>Directory Structure</span></a>
+                           	<ul>
+                           		<li class='has-sub'><a href="#app-structure">App Directory Structure</a>
+              
+                           			<li><a href="#http-structure">HTTPS Structure</a></li>
+                           			<li><a href="#resources">Resources</a></li>
+ 
+                           	</ul>
+                           		
+                           </li>
+                           <li class='has-sub'>
+                              <a href='#settings'><span>Settings</span></a>
+                              <ul>
+                                 <li><a href="#general-settings">General Settings</a></li>
+                                 <li><a href="#home-settings">Home Page Settings</a></li>
+                                 <li><a href="#contact-settings">Contact Page Settings</a></li>
+                              </ul>
+                           </li>
+                            <li><a href="#backend"><span>Backend</span></a>
+                                <ul>
+                                    <li><a href="#admin-role">Admin Role</a></li>
+                                    <li><a href="#leader-role">Leader Role</a></li>
+                                    <li><a href="#employee-role">Employee Role</a></li>
+                                    <li><a href="#user-role">User Role</a></li>
+                                    <li><a href="#external-role">External Role</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#frontend"><span>Frontend</span></a></li>
+                        </ul>
+                     </div>
+                     <!--/.nav-collapse -->
+                  </div>
+                  <!--/.container-fluid -->
+               </nav>
+               <!-- end nav -->
+            </header>
+            <!-- end header -->
+         </div>
+         <!-- end sidebar -->
+         <div id="main">
+            <section class="intro-banner" style="background: url('images/bg/01.jpg'); background-size: cover; background-repeat: no-repeat;">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <a href="#"><img src="images/sofdesk-logo.png" class="img-responsive" alt=""></a>
+                        <h1 class="text-white">USER GUIDE</h1>
+                        <p class="text-white">On behalf of iqonicthemes team, we would like to thank you for purchasing this item. Your support encourages us to build better items and continuously bring value to our products. This documentation file covers all the information needed to install and use this Template. You'll find everything you need to know to create a stunning and beautiful website in minutes.</p>
+                        <p class="text-white">Sofdesk is based on <b>Laravel framework</b>. This documentation will give you an understanding of how Sofdesk is structured and guide you in performing functions. If you require further assistance not covered in this documentation, please contact us in our support. Click here to contact us.</p>
+                        <ul>
+                           <li>Created: 10 September 2019</li>
+                           <li>By: iQonicthemes</li>
+                           <li>Email: <a href="mailto:design@iqonicthemes.com">design@iqonicthemes.com</a></li>
+                           <li>HelpDesk: <a target="_blank" href="http://iqonicthemes.com/">http://iqonicthemes.com/contactus</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-installation">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Basic Installation</h2>
+                        <p><b>Before you start the installation, please make sure you have the following components enable on your server</b></p>
+	                        <code>
+		                        <ul>
+		                            <li>PHP 7.2 or greater</li>
+		                            <li>OpenSSL PHP Extension</li>
+		                            <li>PDO PHP Extension</li>
+		                            <li>Mbstring PHP Extension</li>
+		                            <li>Tokenizer PHP Extension</li>
+		                            <li>XML PHP Extension</li>
+		                            <li>Ctype PHP Extension</li>
+		                            <li>JSON PHP Extension</li>
+		                            <li>GD PHP Extension (or Imagick PHP Extension)</li>
+		                            <li>PHP Fileinfo extension</li>
+		                            <li>PHP Zip Archive</li>
+		                            <li>Rewrite Module (Apache or Nginx)</li>
+		                        </ul>
+	                    	</code>
+                        <p><b>PHP.INI Requirements</b></p>
+	                        <code>
+		                        <ul>
+		                        	<li>open_basedir must be disabled</li>
+		                        </ul>
+	                    	</code>
+
+	                    <p><b>File and folder permissions</b></p>
+		                    <code>
+		                        <ul>
+		                        	<li>/bootstrap        775</li>
+									<li>/storage          775 (recursively)</li>
+		                        </ul>
+	                    	</code>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="installation-instructions">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Installation Instructions</h2>
+                        <ul>
+                        	<li>Create a database</li>
+                        	<li>Upload the contents of <b>Codes</b> folder to your server root, usually <b>/path/to/www/html</b> or <b>/path/to/public_html/</b></li>
+                        <ul>
+                        <li>
+                            <b>Run by entering the URL: http://localhost or http://domain.com </b><br>
+                                If the installation page is viewable then kindly skip the below instructions and follow the <b>Installation Steps</b> given below.<br>
+                                If not then, enter this url: http://localhost/public or http://domain.com/public.
+                                if viewed successfully then follow the above steps.
+                            <br>If you wish to remove public directory.So you need to add .htaccess file with some configuration. 
+                            <br><b>For that enter the below command in terminal:</b></li>
+                            <pre class="prettyprint lang-html linenums overflow-auto">sudo a2enmod rewrite <br>sudo vi /etc/apache2/apache2.conf</pre>
+                            <img src="images/screenshots/screenshot.jpg"><br><br>
+                            <li>sudo service apache2 restart</li>
+                            <li>Now, you have successfully run with localhost.</li>
+                      </ul>
+                      <br>
+              <b>Installation Steps:-</b>
+							<ul>          
+                        		<li><strong>Step 1:</strong></li><img src="images/installation/1.png"><br>
+                        		<li><strong>Step 2: </strong></li><img src="images/installation/2.png"><br>
+                                    <li><strong>Step 3: </strong></li>
+                            
+                            <p>If you face any permission issue then please run this command </p>
+                           
+                            <pre class="prettyprint lang-html linenums overflow-auto"><ol class="linenums"><li class="L0"><span class="pln">sudo chgrp -R www-data storage bootstrap/cache </span></li><li class="L1"><span class="pln">sudo chmod -R ug+rwx storage bootstrap/cache</span></li></ol></pre>
+                            <li style="display: -webkit-box;"><img src="images/installation/pesrmission.png">
+                                <br>Else<br>
+                                <img src="images/installation/3.png">
+                            <br></li>
+                        			<li><strong>Step 4: </strong></li><img src="images/installation/4.png"><br>
+                        			<li><strong>Step 5: </strong></li><img src="images/installation/5.png"><br>
+                        			<li><strong>Step 6: </strong></li><img src="images/installation/6.png"><br>
+                        			<li><strong>Step 7: </strong></li><img src="images/installation/7.png"><br>
+
+
+                                    <li><strong>Step 8:</strong>
+
+                                    <p>While installation if you face database access denied issue then please run this commond</p>
+                                    </li>
+
+                                    <pre class="prettyprint lang-html linenums overflow-auto"><ol class="linenums">chmod 777 .env </span></ol></pre>
+                                    <br>
+                                    </strong><img src="images/installation/9.png"><br>
+
+                                    Else
+                                    <br>
+                                    <br>
+                                    <img src="images/installation/8.png"><br>
+                                    </li>
+                        			
+                        		
+
+                        		</ul>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section  id="mail-config">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Mail Configuration</h2>
+                        <b>Setup</b>
+                        <ul>
+                        	<li>Create the database on your server</li>
+                        	<li>Open and edit the /.env file and provide your server details:</li>
+                          	<pre class="prettyprint lang-html linenums overflow-auto"><br>MAIL_DRIVER=smtp<br>MAIL_HOST=smtp.gmail.com<br>MAIL_PORT=587<br>MAIL_USERNAME=<br>MAIL_PASSWORD=<br>MAIL_ENCRYPTION=tls</pre>
+							
+							<li>You are done</li>
+						</ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section id="app-config">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">App Configuration</h2>
+                        <b>Setup</b>
+                        <ul>
+                        	<li>Open and edit the /.env file and provide following details:</li>
+                          	<pre class="prettyprint lang-html linenums overflow-auto"><br>APP_NAME="IQONIC"<br>APP_ENV=local<br>APP_KEY=base64:HA5sAVrjrXO5YcGf4JqQSyzu+/ZICNkKsPz6m4dJDok=<br>APP_DEBUG=true<br>APP_URL=http://127.0.0.1:8000
+							</pre>
+							<li>Enter App name, App env, App key, App debug and App url</li>
+							<li>You are done</li>
+						</ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+              <section id="directory-structure">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Directory Structure</h2>
+                        <div class="col-sm-6">
+                          <img src="images/Structure/mainfolder.png" width="300px">
+                         </div>
+                       	<ul>
+                       		<li>app<br>- The app directory holds the base code for your Laravel application.</li>
+                       		<li>bootstrap<br>- The bootstrap directory holds all the bootstrapping scripts used for your application.</li>
+                       		<li>config<br>- The config directory holds all your project configuration files (.config).</li>
+                       		<li>database<br>- The database directory holds your database files.</li>
+                       		<li>public<br>- The public directory helps in starting your Laravel project and also holds other scripts (JavaScript and CSS) as well along with images required for your project.</li>
+                       		<li>resources<br>- The resources directory holds all the Sass files, language (localization) files, templates (if any).</li>
+                       		<li>routes<br>- The routes directory hold all your definition files for routing such as console.php, api.php, channels.php etc.</li>
+                       		<li>storage<br>- The storage directory holds your session files, cache, compiled templates as well as miscellaneous files generated by the framework.</li>
+                       		<li>test<br>- The test directory holds all your test cases.</li>
+                       		<li>vendor<br>- The vendor directory holds all composer dependency files.</li>
+                       	</ul>
+                     </div>
+                    
+                  </div>
+               </div>
+            </section>
+
+             
+             <section id="app-structure">
+               <div class="container">
+                  <div class="row">
+
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">App Directory Structure</h2>
+                       	<ul>
+                       		<li>Console<br>- The Console directory contains all your project artisan commands.</li>
+                       		<li>Datatables<br>- Data Tables</li>
+                       		<li>Exceptions<br>- The Exceptions directory holds your laravel project's exception handling files which handles all the exceptions thrown by your Laravel project.</li>
+                       		<li>Helper<br>-  All Helper fuction define inside helper.php</li>
+                       		<li>Http<br>- The Http directory holds different filters, requests, and controllers.</li>
+                       		<li>Providers<br>- The Providers directory is used for containing different service providers.</li>
+                       		
+                       	</ul>
+                     </div>
+                     <div class="col-sm-6">
+                     	<img src="images/Structure/app.png" width="300px">
+                     </div>
+               </div>
+            </section>
+            <section id="http-structure">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">HTTPS Structure</h2>
+                       	<ul>
+                       		<li>Controllers</li>
+                       		<li>Middleware</li>
+                       		<li>Requests</li>
+                       		
+                       	</ul>
+                     </div>
+                     <div class="col-sm-6">
+                     	<img src="images/Structure/https.png" width="300px">
+                     </div>
+               </div>
+            </section>
+ <section id="resources">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Resources</h2>
+                       <p> <strong>All Blades and view files.</strong></p>
+                     </div>
+                     <div class="col-sm-6">
+                     	<img src="images/Structure/resources.png" width="300px">
+                     </div>
+               </div>
+            </section>
+
+
+            <section id="settings">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Settings</h2>
+                        <p>
+                            You can control and manage your theme settings from here.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section id="general-settings">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <h2 class="heading-title">General Settings</h2>
+                       	<ul>
+                       		<li>Logo <br>- Select and upload the logo</li>
+                       		<li>Favicon <br>- Select and upload the favicon</li>
+                       		<li>URLS <br>- You can set social media links from here</li>
+                       		<li>Others <br>- You can provide other details for the website such as Site Name, Site Email, Site Description, Copyright Text</li>
+                       	</ul>
+                     </div>
+                     <div class="col-sm-6">
+                     	<img src="images/screenshots/1.png" width="500px">
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section id="home-settings">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <h2 class="heading-title">Home Page Settings</h2>
+                       	<ul>
+                       		<li>Slide Title <br>- Set the slide title for slider</li>
+                       		<li>Slide Text <br>- Set the slide description for slider</li>
+                       		<li>Page Title Background <br>- Set the page title background</li>
+                       		<li>Slides <br>- Upload slider images for homepage</li>
+                       	</ul>
+                     </div>
+                     <div class="col-sm-6">
+                     	<img src="" width="500px">
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="contact-settings">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <h2 class="heading-title">Contact Page Settings</h2>
+                       	<ul>
+                       		<li>Title <br>- Set the title</li>
+                       		<li>Contact Email <br>- Set the contact email address for contact page</li>
+                       		<li>Contact Number <br>- Set the contact number for contact page</li>
+                       		<li>Map Latitude and Longitude <br>- Set the latitude and longitude for map</li>
+                       		<li>Address<br>- Set the address for contact page</li>
+                       	</ul>
+                     </div>
+                     <div class="col-sm-6">
+                     	<img src="" width="500px">
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+             <section id="backend">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h2 class="heading-title">Backend</h2>
+                             <div style="margin-bottom: 30px;">
+                                 <b>User Roles:</b><br>
+                                 <p>In this template we have provided the below roles:</p>
+                                 <ul>
+                                     <li>Admin Role</li>
+                                     <li>Leader Role</li>
+                                     <li>Employee Role</li>
+                                     <li>Support Role</li>
+                                     <li>User Role</li>
+                                     <li>External Role</li>
+                                 </ul>
+                             </div>
+                             <div style="margin-bottom: 30px;">
+                                 <b>Manage Permissions:</b><br>
+                                 <p>Module wise permission for each roles.</p>
+                             </div>
+                             <div id="admin-role">
+                                 <h2 class="heading-title">Admin Role</h2>
+                                 <p>Admin can add Departments, Employees, Users, Categories, etc.</p>
+                                     <div style="margin-bottom: 30px;">
+                                         <b>Departments:</b><br>
+                                         <p>Enter Department Name, Department Leader, and select status.</p>
+                                         <img src="images/screenshots/6.png" width="900px">
+                                     </div>
+                                     <div style="margin-bottom: 30px;">
+                                         <b>Employees:</b><br>
+                                         <p>Select Department, Enter full name, email id, password, etc.</p>
+                                         <img src="images/screenshots/7.png" width="900px">
+                                     </div>
+                                     <div style="margin-bottom: 30px;">
+                                         <b>Users:</b><br>
+                                         <p>Enter full name, email id, password, etc.</p>
+                                         <img src="images/screenshots/8.png" width="900px">
+                                     </div>
+                                     <div style="margin-bottom: 30px;">
+                                         <b>Categories:</b><br>
+                                         <p>Enter category name, select status and upload category image.</p>
+                                         <img src="images/screenshots/9.png" width="900px">
+                                     </div>
+                             </div>
+                             <hr>
+                             <div id="leader-role">
+                                 <h2 class="heading-title">Leader Role</h2>
+                                 <p>Leader can add Articles, Videos, Knowledge, etc. Leader can also assign tickets to employee.</p>
+                                     <div style="margin-bottom: 30px;">
+                                         <b>Articles:</b><br>
+                                         <p>Enter article title, select category, select status, choose image and enter content description.</p>
+                                         <img src="images/screenshots/10.png" width="900px">
+                                     </div>
+                                     <div style="margin-bottom: 30px;">
+                                         <b>Videos:</b><br>
+                                         <p>Enter title, select category, select status, upload video and enter content description.</p>
+                                         <img src="images/screenshots/11.png" width="900px">
+                                     </div>
+                                     <div style="margin-bottom: 30px;">
+                                         <b>Knowledge:</b><br>
+                                         <p>Enter title, select category, select status, and enter content description.</p>
+                                         <img src="images/screenshots/12.png" width="900px">
+                                     </div>
+                             </div>
+                             <hr>
+                             <div id="employee-role">
+                                 <h2 class="heading-title">Employee Role</h2>
+                                 <p>Employee can add Articles, Videos, Knowledge, etc.</p>
+                                 <div style="margin-bottom: 30px;">
+                                     <b>Articles:</b><br>
+                                     <p>Enter article title, select category, select status, choose image and enter content description.</p>
+                                     <img src="images/screenshots/10.png" width="900px">
+                                 </div>
+                                 <div style="margin-bottom: 30px;">
+                                     <b>Videos:</b><br>
+                                     <p>Enter title, select category, select status, upload video and enter content description.</p>
+                                     <img src="images/screenshots/11.png" width="900px">
+                                 </div>
+                                 <div style="margin-bottom: 30px;">
+                                     <b>Knowledge:</b><br>
+                                     <p>Enter title, select category, select status, and enter content description.</p>
+                                     <img src="images/screenshots/12.png" width="900px">
+                                 </div>
+                             </div>
+                             <hr>
+                             <div id="user-role">
+                                 <h2 class="heading-title">User Role</h2>
+                                 <p>User can raise the ticket, view his own ticket and public tickets, and close his own ticket.</p>
+                                 <img src="images/screenshots/13.png" width="900px">
+                             </div>
+                             <hr>
+                             <div id="external-role">
+                                 <h2 class="heading-title">External Role</h2>
+                                 <p>You can add new role. You can also set module wise permission for each role.</p>
+                                 <img src="images/screenshots/14.png" width="900px">
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+
+            <section id="frontend">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Frontend</h2>
+                        <div style="margin-bottom: 30px;">
+	                        <b>Homepage</b><br>
+	                        <img src="images/screenshots/2.png" width="900px">
+                    	</div>
+                    	<hr>
+                    	<div style="margin-bottom: 30px;">
+	                        <b>Public Tickets</b><br>
+	                        <img src="images/screenshots/3.png" width="900px">
+                        </div>
+                        <hr>
+                        <div>
+	                        <b>Articles</b><br>
+	                        <img src="images/screenshots/4.png" width="900px">
+                        </div>
+                         <hr>
+                         <div>
+                             <b>Knowledge Base</b><br>
+                             <img src="images/screenshots/5.png" width="900px">
+                         </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <footer class="footer">
+	            <div class="container">
+		            <div class="row">
+			            <div class="col-sm-12">
+			            	<p>Designed and built with love by <a href="http://iqonic.design">Iqonic Design</a></p>
+			            </div>
+		            </div>
+	            </div>
+            </footer>
+            </div>
+         </div>
+         <!-- end main -->
+      </div>
+      <!-- end wrapper -->
+      <!-- END SITE -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/prettify.js"></script>
+      <script src="js/plugins.js"></script>
+   </body>
+</html>

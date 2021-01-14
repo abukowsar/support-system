@@ -1,0 +1,20 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+/*@import '~bootstrap/scss/bootstrap';*/
+
+// argon.scss
+@import "argon";
+
+// custom.scss
+@import "custom";
+@import "select2/select2";
+@import "~node-snackbar/src/sass/snackbar";
+@import "~jquery-confirm/css/jquery-confirm.css";
+
+
+

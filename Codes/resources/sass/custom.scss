@@ -1,0 +1,44 @@
+.nav-item {
+    &.active {
+        background: $primary;
+        color: $white;
+        margin: 0px 10px;
+        border-radius: 5px;
+
+        > a {
+            color: $white !important;
+
+            > i {
+                color: $white !important;
+            }
+        }
+    }
+}
+.has-danger:after {
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    content: "\f12a";
+    margin-right: 10px;
+}
+.has-success:after {
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    content: "\f058";
+    margin-right: 10px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.circle-image {
+    display: inline-block;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.form-group {
+    .list-unstyled {
+        margin-bottom: 0px !important;
+    }
+}
